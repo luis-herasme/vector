@@ -1,0 +1,14 @@
+{
+  "name": "vector_class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Vector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vector_functions": "^1.0.0"
+  }
+}
