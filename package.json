@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vector_functions": "^1.0.0"
+    "vector_functions": "^1.0.2"
   }
 }
