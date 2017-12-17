@@ -2,7 +2,7 @@
   "name": "vector_class",
   "version": "1.0.0",
   "description": "",
-  "main": "Vector.js",
+  "main": "./dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
