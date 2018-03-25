@@ -81,7 +81,7 @@ class Vector2D {
 
   moveTowards (vector: Vector2D, speed: number, stop: number): void {
     if (this.distance(vector) > stop) {
-      const unit = Vector2D.normalize(vector)
+      const unit = Vector.normalize(Vector.sub(vector, this))
       unit.mult(speed)
       this.add(unit)
     }
