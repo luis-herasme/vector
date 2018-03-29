@@ -81,7 +81,7 @@ class Vector2D {
 
   moveTowards (vector: Vector2D, speed: number, stop: number): void {
     if (this.distance(vector) > stop) {
-      const unit = Vector2D.normalize(vector)
+      const unit = Vector.normalize(Vector.sub(vector, this))
       unit.mult(speed)
       this.add(unit)
     }
@@ -125,11 +125,11 @@ class Vector2D {
   }
 
   static random (x: number, y: number): Vector2D {
-    if (Math.random() > 0.5) {
-      return new Vector2D(x * Math.random(), y * Math.random())
-    } else {
-      return new Vector2D(-x * Math.random(), -y * Math.random())
-    }
+    let s1 = 1
+    let s2 = 1
+    if (Math.random() > 0.5) s1 = -1
+    if (Math.random() > 0.5) s2 = -1
+    return new Vector(x * Math.random() * s1, y * Math.random() * s2)
   }
 }
 
