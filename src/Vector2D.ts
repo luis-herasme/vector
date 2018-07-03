@@ -132,7 +132,7 @@ class Vector {
     let s2 = 1
     if (Math.random() > 0.5) s1 = -1
     if (Math.random() > 0.5) s2 = -1
-    return new Vector(x * Math.random() * s1, y * Math.random() * s2)
+    return new Vector2D(x * Math.random() * s1, y * Math.random() * s2)
   }
 }
 
